@@ -1,0 +1,249 @@
+/*
+* Ganesha Speaks V8.0.0
+* www.ganeshaspeaks.com
+* 21/08/2019
+*/
+
+/* Sidebar */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.sidebar {
+  min-width: 200px;
+  max-width: 200px;
+  background: #111111;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.sidebar.active {
+  margin-left: -200px;
+}
+
+.sidebar .sidebar-header {
+  padding: 20px;
+  background: #000000;
+}
+
+.sidebar ul {
+  padding: 20px 0;
+}
+
+.sidebar ul p {
+  color: #ffffff;
+  padding: 10px;
+}
+
+.sidebar ul li a {
+  padding: 10px;
+  font-size: 0.85rem;
+  display: block;
+  color: #ffffff;
+}
+
+.sidebar ul li a:hover {
+  color: #111111;
+  background: #ffffff;
+}
+
+.sidebar ul li.active > a {
+  color: #ffffff;
+  background: #000000;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    margin-left: -200px;
+  }
+  .sidebar.active {
+    margin-left: 0;
+  }
+}
+
+/* Content */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* 
+.container {
+    width: calc(100% - 200px);
+    padding: 15px;
+    min-height: 100vh;
+    transition: all 0.3s;
+} */
+
+/* TNS Slider Demo CSS */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.lazy-load-slider img {
+  height: auto;
+}
+.auto-width-slider img {
+  max-width: none;
+}
+.auto-height-slider img {
+  width: 100%;
+}
+
+.customize-slider-tools {
+  position: relative;
+}
+.customize-slider-thumbnails {
+  margin: 20px 0;
+  text-align: center;
+}
+.customize-slider-thumbnails li {
+  display: inline-block;
+  cursor: pointer;
+  border: 5px solid #fff;
+}
+.customize-slider-thumbnails .tns-nav-active {
+  background: none;
+  border-color: #000;
+}
+.customize-slider-thumbnails li {
+  width: 50px;
+}
+.customize-slider-thumbnails img {
+  vertical-align: bottom;
+  width: 100%;
+  height: auto;
+  max-height: 50px;
+}
+.customize-slider-controls {
+  text-align: center;
+}
+.customize-slider-controls li {
+  display: block;
+  position: absolute;
+  top: 50%;
+  height: 60px;
+  line-height: 60px;
+  margin-top: -30px;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.customize-slider-controls li img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.customize-slider-controls .prev {
+  left: 0;
+}
+.customize-slider-controls .next {
+  right: 0;
+}
+.customize-slider-controls li:hover {
+  background: #f2f2f2;
+}
+
+.tns-controls {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.tns-controls [aria-controls] {
+  font-size: 15px;
+  margin: 0 5px;
+  padding: 0 1em;
+  height: 2.5em;
+  color: #000;
+  background: #66ccff;
+  border-radius: 3px;
+  border: 0;
+}
+.lt-ie9 .tns-controls > [aria-controls] {
+  line-height: 2.5em;
+}
+[data-action] {
+  display: block;
+  margin: 10px auto;
+  font-size: 17px;
+  min-width: 3em;
+  text-align: center;
+  background: transparent;
+  border: 0;
+}
+.tns-controls [disabled] {
+  color: #999999;
+  background: #b3b3b3;
+  cursor: not-allowed !important;
+}
+.tns-nav {
+  text-align: center;
+  margin: 10px 0;
+}
+.tns-nav > [aria-controls] {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ddd;
+  border: 0;
+}
+.tns-nav > .tns-nav-active {
+  background: #999;
+}
+.playbutton-wrapper {
+  text-align: center;
+}
+.playbutton-wrapper button {
+  height: 34px;
+  padding: 0 10px;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.wrapper {
+  padding: 0 5em;
+}
+.suite-container .title,
+.suite-container .subtitle,
+.suite-container li {
+  padding: 5px 10px;
+}
+.suite-container li {
+  font-size: 12px;
+  line-height: 1.4;
+  background: #f5f5f5;
+}
+.suite-container .title {
+  font-size: 14px;
+  font-weight: bold;
+  background: #8acac6;
+  text-transform: capitalize;
+}
+.suite-container .subtitle {
+  font-size: 13px;
+  font-weight: bold;
+  background: #dedede;
+  text-transform: capitalize;
+}
+.suite-container .fail {
+  background: #ffade2;
+}
+
+[class*="vertical"] .item img {
+  padding: 0;
+}
+[class*="vertical"] .item img:before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  margin-right: -1px;
+  height: 100%;
+  vertical-align: middle;
+}
+[class*="vertical"] .item img a {
+  display: inline-block;
+  padding: 0;
+}
+[class*="vertical"] .item img {
+  height: 160px;
+}
+
+/* go to */
+.goto-controls {
+  margin: 1rem 0;
+  text-align: center;
+}
